@@ -1,21 +1,65 @@
 body {
-  font-family:sans-serif;
-  margin: 0 50px;
+  font-family:'Baloo 2', cursive;
+  color: #1B4A5A;
+  margin: 0 auto;
+  background-color: #BFCACD;
+}
+
+.logo {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 0;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 40px 0;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 5px 5px 10px #25252511;
+}
+
+.text {
+  text-align: left;
+  margin: 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #FFFFFF;
+  background-color:#F6B054 ;
+  border: none;
+  border-radius: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn:hover {
+  background-color:#1B4A5A;
+  transform:translateY(-10%);
 }
 
 #posts {
-width: 300px;
+  margin: 10px 0;
 }
 
-#posts div {
+.task {
+  width: 250px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  color: #FFFFFF;
+  background-color: #1B4A5A;
+  border-radius: 10px;
 }
 
 .options {
@@ -25,6 +69,12 @@ width: 300px;
 
 i {
   cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+i:hover {
+  color: #F6B054;
+  transform:translateY(-10%);
 }
 
 #msg {
@@ -36,8 +86,12 @@ i {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
 }
 
 #input {
-  margin: 20px 0;
+  margin: 10px 0;
+  border-color: #13225e22;
+  border-radius: 10px;
+  padding: 15px;
 }

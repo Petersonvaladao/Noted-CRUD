@@ -15,9 +15,8 @@ form.addEventListener("submit", (e) =>{
 let formValidation = () => {
   
   if(input.value === ""){
-    msg.innerHTML = "Post cannot be blank";
+    msg.innerHTML = "Task cannot be blank";
   } else {
-    console.log("success");
     msg.innerHTML = "";
     acceptData();
   }
@@ -33,14 +32,15 @@ let acceptData = () => {
 
 let createPost = () => {
   posts.innerHTML +=
-  `
-  <div>
-    <p>${data.text}</p>
-    <span class="options">
-      <i onClick="editPost(this)" class="fa-solid fa-pen-to-square"></i>
-      <i onClick="deletePost(this)" class="fa-solid fa-trash-can"></i>
-    </span>
-  </div> 
+  `   <div id="posts">
+        <div class="task">
+            <p>${data.text}</p>
+          <div class="options">
+            <i onclick="editPost(this)" class="fa-solid fa-pen-to-square"></i>
+            <i onclick="deletePost(this)" class="fa-solid fa-trash-can"></i>
+          </div>
+        </div>
+      </div>
   `;
   input.value = "";
 };
