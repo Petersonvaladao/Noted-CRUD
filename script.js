@@ -27,7 +27,7 @@ let data = {};
 let acceptData = () => {
   data.text = input.value;
   console.log(data);
-  createPost()
+  createPost();
 };
 
 let createPost = () => {
